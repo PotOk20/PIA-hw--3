@@ -47,6 +47,7 @@ function continueQuiz() {
   Div3.classList.remove('hide');
   Div2.classList.add('hide');
   shuffledQuestions = questions.sort(() => Math.random() - .5);
+  score = 0;
   currentQuestionIndex = 0;
   setNextQuestion();
 }
