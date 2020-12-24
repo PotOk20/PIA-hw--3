@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PIA hw-3 -Quiz-</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="Start-box" id="start_box">
+      <div class="title-quiz">
+        <h1> ...Quiz Time... </h1>
+        <h2> ...quiz time...</h2>
+      </div> 
+      <div class="user-information">
+        <form>
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id ="proba" required>
+        </form>
+        <button class="Button-start" id="start_btn">Start Quiz :D</button>
+      </div>
+    </div>  
+
+        <div class="info-box hide" id="info_box">
+          <div class="info-title">
+            <span>???? Rules of this Quizzz????</span>
+          </div>
+          <div class ="info-list">
+            <div class="info">1. You will have <span> 20 seconds</span> per each question</div>
+            <div class="info">2. You're question will be automaticly wrong if timer goes off</div>
+            <div class="info">3. You will get point based on correct given answer</div>
+            <div class="info">4. You must finish quiz.. or else...</div>
+          </div>
+          <div class="buttons">
+            <button class="quit" id="exit_btn">Exit Quiz</button>
+            <button class="start" id="continue_btn">Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="Question-Container hide" id="question_cont">
+        <header> 
+          <div class="title"><pre> 
+...Quiz Time...
+    ..quiz time...</pre>
+          </div>
+          <div class="timer">
+            <div class="time_text">Time left</div>
+            <div class="timer_sec" id="timer_sec">20</div>
+          </div>
+        </header>  
+      <div id="question-container">
+        <div id="question" class="titleQ">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+
+        </div>
+      </div>
+  
+      <div class="control">
+      <button id="next-btn" class="next-btn btn">Next</button>
+      </div>
+    </div>  
+    </div>
+    <div id="Div4" class="table hide"> You're score 
+      <span id="nameZ">UNKNOWN </span><span> is:</span>
+      <div class="scoreNum" id="score">0 </div>
+      <button class="Button-start " id="rr_btn">Try Again?</button>
+  </body>
+</html>
